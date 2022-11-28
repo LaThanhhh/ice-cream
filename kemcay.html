@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEM CÂY</title>
+</head>
+<body>
+    <section id="page">
+        <div id="main">
+            <header>
+                <div class="logo">
+                    <img src="img/ice-cream.jpg"width="100" >
+                </div>
+
+                <ul class="menu">
+                    <li><a href="index.html" class="p1">TRANG CHỦ</a></li>
+                    <li><a href="gioithieu.html" class="p1">GIỚI THIỆU</a></li>
+                    <li><a href=""class="p1">SẢN PHẨM</a>
+                        <ul>
+                            <li><a href="kemcay.html" >KEM CÂY</a></li>
+                            <li><a href="kemocque.html">KEM ỐC QUẾ</a></li>
+                            <li><a href="kemly.html">KEM LY</a></li>
+                            <li><a href="kemhop.html">KEM HỘP</a></li>
+                            <li><a href="suachuadeo.html">SỮA CHUA DẺO</a></li>
+                        </ul>
+ 
+                    </li>
+                    <li><a href=""class="p1">TIN TỨC</a></li>
+                    <li><a href=""class="p1">LIÊN HỆ</a></li>
+                </ul>
+
+            </header>
+            <section id="middle">
+                <div class="about_cream">
+                    <h2>KEM CÂY</h2>
+                    <div class="row">
+                        <div class="box_cream">
+                            <div class="box_img">
+                                <img id="img1"src="img/kemcay_1.png"width="250px"class=logo_2>
+                                 <img id="img2"src="img/kemcay_1.1.jpg"width="250px" class="logo_3">
+
+                            </div>
+                            <div class="box_title">
+                                <a href="">Kem Merino X Đậu Xanh</a>
+                            </div>
+                            <div class="box_price">
+                                <span>10,000 vnđ</span>
+                            </div>
+                        </div>
+                        <div class="box_cream">
+                            <div class="box_img">
+                                <img id="img3" src="img/kemcay_2.png"width="250">
+                                <img id="img4" src="img/kemcay_2.2.jpg" width="250" class="logo_3">
+                                
+                            </div>
+                            <div class="box_title">
+                                <a href="">Kem Merino X Đậu Đỏ</a>
+                            </div>
+                            <div class="box_price">
+                                <span>10,000 vnđ</span>
+                            </div>
+                        </div>
+                        <div class="box_cream">
+                            <div class="box_img">
+                                <img id="img5" src="img/kemcay_3.png" width="250">
+                                <img id="img6" src="img/kemcay_3.3.jpg" width="250" class="logo_3">
+                            </div>
+                            <div class="box_title">
+                                <a href="">Kem Merino Khoai Môn</a>
+                            </div>
+                            <div class="box_price">
+                                <span>10,000 vnđ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer id="footer">
+            <div class="logo">
+                <img src="img/ice-cream.jpg"width="100" >
+            </div>
+            <ul class="menu">
+                <li><a href="index.html" class="p1">TRỢ GIÚP</a></li>
+                <li><a href="gioithieu.html" class="p1">GIỚI THIỆU</a></li>
+                <li><a href="gioithieu.html" class="p1">LIÊN HỆ NGAY</a></li>
+            </ul>
+        </footer>
+    </section>
+    <script>
+        $(document).ready(function(){
+            $('.toggle').click(function(){ 
+                $('.hd_list').slideToggle();
+            });
+        })
+        var img1 = new Image();
+        var img2 = new Image();
+        var img3 = new Image();
+        var img4 = new Image();
+        var img5 = new Image();
+        var img6 = new Image();
+        function loadimg(){
+            img1.src="img/kemcay_1.png";
+            img2.src="img/kemcay_1.1.jpg";
+
+        }
+        function overimg(){
+            document.getElementById("img1")=img2.src;
+        }
+        function outimg(){
+            document.getElementById("img1")=img1.src;
+        }
+        
+        
+    </script>
+</body>
+</html>

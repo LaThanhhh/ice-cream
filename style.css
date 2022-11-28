@@ -1,0 +1,159 @@
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+body{
+  font-family:'Times New Roman', Times, serif;
+  
+}
+/*header*/
+header{
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color .3s,opacity .3s;
+}
+header .logo .box_ser{
+ width: 30%;
+}
+header .logo img{
+    border-radius: 100px;
+}
+header .menu{
+    display: flex;
+    list-style: none;
+  
+}
+header .menu>li{
+    padding: 12px 20px;
+}
+.p1{
+    background-color: #CCFFCC;
+    padding: 10px;
+    border-radius: 10px;
+}
+header .menu>li>ul{
+  position: absolute;
+  background-color: #CCFFCC;
+  width: 140px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: none;
+}
+header .menu>li:hover>ul{
+    display: block;
+
+}
+header .menu>li>ul>li{
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: 1px solid #000;
+}
+.toggle{
+    display: none;
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 10px;
+    color: #33CC33;
+    
+}
+a{
+    color: #0a250a;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.box_ser{
+    position: relative;
+}
+.box_ser .text_ser{
+    border-radius: 5px;
+    outline: none;
+    background:none ;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+.box_ser .btn_ser{
+    background-color:#fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: -40px;
+    border-radius: 20px;
+    color: #33CC33;
+}
+@media screen and (max-width:1025px){
+
+    .toggle{
+        display: block;
+    }
+    header .menu {
+        background-color: #CCFFCC;
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        margin-top: 120px;
+    }
+
+    header .logo img{
+        position: relative;
+    }
+
+
+}
+/*content*/
+
+/*KEM*/
+
+.about_cream{
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+h2{
+    text-align: center;
+    padding: 5px;
+    background-color: #CCFFCC;
+    border-radius: 10px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box_cream{
+   
+    margin-top: 20px;
+    text-align: center;
+}
+/*section*/
+section .con_img{
+    border-radius: 50px;
+}
+
+/*footer*/
+
+footer{
+
+    display: flex;
+    padding: 0px 20px;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .logo .box_ser{
+    width: 30%;
+   }
+footer .logo img{
+    border-radius: 100px;
+}
+footer .menu{
+    display: flex;
+    list-style: none;
+  
+}
+footer .menu>li{
+    padding: 12px 20px;
+}
